@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- for preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+    <!--  for the moon image and switchTheme  -->
+    <div class="switchTheme" id="switchTheme">
+        <img src="./img/moon.png" alt="Moon Image" id="moonIcon">
+    </div>
+    <!--  for all poject  -->
+    <div class="cc">
+        <div class="reda"></div>
+        <div class="container">
+            <!--   container -->
+            <div class="profile">
+                <img src="./img/yf.jpg" alt="reda">
+
+
+            </div>
+            <div class="profileInfo">
+                <h1 class="name">REDA EL KLIE <img src="./img/check.png" alt=""></h1>
+                <h3 class="prof">Web developer</h3>
+            </div>
+            <div class="profileSocail">
+                <a href="https://www.instagram.com/reda_elklie/" target="_blank"> <img src="./img/instagram.png" alt=""></a>
+                <a href="" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+                <a href="https://codepen.io/CodeReda" target="_blank"><img src="./img/codepen.png" alt=""></a>
+            </div>
+            <div class="profileDetails">
+                <div class="div">
+                    <div class="numbers">2</div>
+                    <div class="description">Years of work</div>
+                </div>
+                <div class="div">
+                    <div class="numbers">+20</div>
+                    <div class="description">Completed projects</div>
+                </div>
+                <div class="div">
+                    <div class="numbers">12</div>
+                    <div class="description">Satisfied customers</div>
+                </div>
+            </div>
+            <div class="profileButtons">
+                <a href="./img/yf1.jpg" download class="download" id="myButton">Download CV  <i class="ri-download-line"></i></a>
+                <div class="smalbutton">
+                    <button class="messanger" id="myButton"><img src="./img/eye.png" title="view CV"  ></button>
+                    <button class="whatsap" id="myButton"><img src="./img/whatsapp.png" alt=""  ></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ProjectsContainer">
+
+        <div class="control" id="myButton">
+            <button id="projectsBtn" class="firstBtn">Latest Projects</button>
+            <button id="skillsBtn" class="secondBtn">Skills</button>
+        </div>
+        <div class="projects" style="display:none;">
+            <div class="project ">
+                <div class="sub ">
+                    <h3>To-Do List</h3>
+
+                    <a href="https://codepen.io/CodeReda/full/ExeRWew " target="_blank "> <button>view<i class="ri-eye-line "></i></button></a>
+                </div>
+            </div>
+            <div class="project ">
+
+                <div class="sub ">
+                    <h3>Quote generator</h3>
+                    <a href="https://codepen.io/CodeReda/full/ExeRWew " target="_blank "> <button>view<i class="ri-eye-line "></i></button></a>
+
+                </div>
+            </div>
+            <div class="project ">
+                <div class="sub ">
+                    <h3>Simple Calculator</h3>
+                    <a href="https://codepen.io/CodeReda/full/BaOVWVg " target="_blank "> <button>view<i class="ri-eye-line "></i></button></a>
+
+                </div>
+            </div>
+            <div class="project ">
+
+                <div class="sub ">
+                    <h3>Rock-Paper-Scissors</h3>
+                    <a href="https://codepen.io/CodeReda/full/ZEMZQmX " target="_blank "> <button>view<i class="ri-eye-line "></i></button></a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="skills" style="display:none;">
+        <div class=" front ">
+            <h1 class="skillsTitle "> <img src="./img/badge.png "> Front-end</h1>
+            <div class="language ">
+                <div class="one ">
+                    <h1>
+                        HTML</h1>
+                    <h3>Basic</h3>
+                </div>
+                <div class="one ">
+                    <h1>
+                        Css</h1>
+                    <h3>Advanced</h3>
+                </div>
+            </div>
+
+            <div class="language ">
+                <div class="one ">
+                    <h1>
+                        JavaScript</h1>
+                    <h3>Intermedaite</h3>
+                </div>
+
+            </div>
+        </div>
+        <div class="back ">
+            <h1 class="skillsTitle "> <img src="./img/badge.png " alt=" "> Back-end</h1>
+            <div class="backLanguage ">
+                <div class="two ">
+                    <h1>
+                        PHP</h1>
+                    <h3>Intermedaite</h3>
+                </div>
+                <div class="two ">
+                    <h1>
+                        Python</h1>
+                    <h3>Basic</h3>
+                </div>
+            </div>
+            <div class="backLanguage ">
+                <div class="two ">
+                    <h1>
+                        MySQL</h1>
+                    <h3>Advanced</h3>
+                </div>
+
+            </div>
+            <div class="backLanguage ">
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- scroll animation-->
+    <script src="https://unpkg.com/scrollreveal "></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '60px',
+            duration: 2500,
+            delay: 400,
+        });
+
+        sr.reveal('.profile');
+        sr.reveal('.name', {
+            delay: 500
+        });
+        sr.reveal('.prof', {
+            delay: 600
+        });
+        sr.reveal('.profileSocail', {
+            delay: 700
+        })
+        sr.reveal('.profileDetails', {
+            interval: 100,
+            delay: 700
+        })
+        sr.reveal('.profileButtons', {
+            delay: 800
+        })
+        sr.reveal('.ProjectsContainer', {
+            delay: 900
+        })
+    </script>
+
+
+    <footer>reda_elklie 2023 &copy;
+
+
+
+    </footer>
+    <script>
+        // Check if the visitor count cookie exists
+        if (document.cookie.indexOf('visitorCount=') === -1) {
+            // If not, set the cookie with an initial value of 1
+            document.cookie = 'visitorCount=1; expires=Fri, 31 Dec 9999 23:59:59 GMT';
+        } else {
+            // If yes, retrieve the current visitor count from the cookie
+            const visitorCount = parseInt(document.cookie.split('visitorCount=')[1]) + 1;
+
+            // Update the visitor count cookie with the new value
+            document.cookie = `visitorCount=${visitorCount}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+        }
+
+        // Display the visitor count on the front-end
+        document.getElementById('visitorCountElement').textContent = document.cookie.split('visitorCount=')[1];
+    </script>
+    <script src="main.js "></script>
+</body>
+
+</html>
