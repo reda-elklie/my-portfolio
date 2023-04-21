@@ -11,7 +11,7 @@ let img = document.querySelector("img")
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("darkMode");
 
-    document.getElementById("moonIcon").src = "./img/sun.png"; // Update with your dark mode icon image source
+    document.getElementById("moonIcon").src = "sun.png"; // Update with your dark mode icon image source
 
 }
 document.getElementById("switchTheme").addEventListener("click", function() {
@@ -30,10 +30,10 @@ document.getElementById("switchTheme").addEventListener("click", function() {
     // Toggle moon icon source when toggling dark mode
     var moonIcon = document.getElementById("moonIcon");
     if (moonIcon.src.includes("moon.png")) {
-        moonIcon.src = "./img/sun.png"; // Update with the path to your sun icon
+        moonIcon.src = "sun.png"; // Update with the path to your sun icon
         moonIcon.alt = "Sun Image"; // Update with your sun icon alt text
     } else {
-        moonIcon.src = "./img/moon.png"; // Update with the path to your moon icon
+        moonIcon.src = "moon.png"; // Update with the path to your moon icon
         moonIcon.alt = "Moon Image"; // Update with your moon icon alt text
     }
 });
@@ -90,3 +90,10 @@ localStorage.setItem('visitCount', ++count);
 if (document.location.search.indexOf('showVisitCount') !== -1) {
     document.write('This page has been visited ' + count + ' times.');
 }
+let docTitle = document.title;
+window.addEventListener("blur", () => {
+    document.title = "Come Back :(";
+});
+window.addEventListener("focus", () => {
+    document.title = docTitle;
+});
