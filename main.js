@@ -90,10 +90,3 @@ localStorage.setItem('visitCount', ++count);
 if (document.location.search.indexOf('showVisitCount') !== -1) {
     document.write('This page has been visited ' + count + ' times.');
 }
-let docTitle = document.title;
-window.addEventListener("blur", () => {
-    document.title = "Come Back :(";
-});
-window.addEventListener("focus", () => {
-    document.title = docTitle;
-});
