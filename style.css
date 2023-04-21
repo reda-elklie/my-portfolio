@@ -414,7 +414,7 @@ body.darkMode h3 {
 
 .preloader {
     padding-top: 50px;
-    background: white url("./img/loader.gif") no-repeat center;
+    background: white url("loader.gif") no-repeat center;
     height: 110vh;
     width: 100%;
     background-size: 70px;
