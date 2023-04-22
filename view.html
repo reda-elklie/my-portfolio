@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    <title>Bio</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        animation: reda 900ms;
+    }
+    
+    .aboutContainer {
+        border-radius: 5px;
+        width: 50%;
+        height: fit-content;
+        user-zoom: none;
+        background-color: rgba(128, 128, 128, 0.243);
+    }
+    
+    .titleAbout {
+        width: 100%;
+        height: fit-content;
+        background-color: #eee;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.2rem;
+        user-select: none;
+        border-radius: 5px;
+    }
+    
+    .descriptionAbout {
+        border-radius: 5px;
+        width: 100%;
+        height: 90%;
+    }
+    
+    .descriptionAbout p::selection {
+        background-color: rgba(128, 128, 128, 0.243);
+    }
+    
+    .descriptionAbout p {
+        font-size: 20px;
+        padding: 15px;
+        line-height: 1.5rem;
+    }
+    
+    .buttonsAbout {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 05px;
+        gap: 0.5rem;
+    }
+    
+    .buttonsAbout button {
+        width: 335px;
+        height: 40px;
+        border-radius: 5px;
+        border: 0;
+        cursor: pointer;
+        transition: 500ms;
+        background-color: rgba(128, 128, 128, 0.367);
+        font-size: large;
+    }
+    
+    .buttonsAbout button:hover {
+        background-color: rgba(128, 128, 128, 0.611);
+    }
+    
+    @keyframes reda {
+        0% {
+            opacity: 0;
+        }
+        20% {
+            opacity: 0.2;
+        }
+        50% {
+            opacity: 0.5;
+        }
+        78% {
+            opacity: 0.7;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @media screen and (max-width:576px) {
+        .buttonsAbout {
+            display: flex;
+            flex-direction: column;
+            font-weight: bold;
+        }
+        .aboutContainer {
+            margin-top: 5rem;
+            width: 90%;
+        }
+        p {
+            font-size: medium;
+        }
+        .buttonsAbout button {
+            width: 300px;
+        }
+    }
+    
+    body.darkMode {
+        background-image: linear-gradient(to bottom, #1b1d1f, #191d22, #191c25, #1c1a27, #201828);
+        color: #ffffff;
+        transition: 500ms;
+    }
+    
+    body.darkMode .titleAbout {
+        color: black;
+        background-color: rgb(132, 131, 126);
+    }
+    
+    body.darkMode button {
+        color: white;
+    }
+    
+    #switchTheme img {
+        position: absolute;
+        cursor: pointer;
+        transition: 500ms;
+        width: 30px;
+        top: 30px;
+        right: 30px;
+    }
+</style>
+
+<body>
+    <!--  for the moon image and switchTheme  -->
+    <div class="switchTheme" id="switchTheme">
+        <img src="./img/moon.png" alt="Moon Image" id="moonIcon">
+    </div>
+    <div class="aboutContainer">
+        <div class="titleAbout">About Me</div>
+        <div class="descriptionAbout">
+            <p>I am Rida El Klie, an 18-year-old web development enthusiast from Tetouan, Morocco. Currently studying Development Digital at Offshore Institute, I am skilled in HTML, CSS, JavaScript, Php, SQL, Python, and more. With a passion for continuous
+                learning, excellent communication and problem-solving skills, and a strong drive to succeed, my goal is to become a professional full-stack developer and create impactful digital experiences for users..</p>
+            <p>Thank you for taking the time to learn about me. I am eager to showcase my abilities and contribute to the world of web development. Let's collaborate and create remarkable online solutions together!</p>
+        </div>
+
+    </div>
+    <div class="buttonsAbout">
+        <a href="index.html"><button>Back</button></a>
+        <button>view Projects Page</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
