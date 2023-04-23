@@ -365,7 +365,7 @@ body.darkMode h3 {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    background-image: url(./img/yf.jpg);
+    background-image: url(yf.jpg);
     background-position: center;
     background-size: cover;
     transition: all 500ms ease-in;
@@ -574,7 +574,7 @@ footer {
     height: 20px;
     text-align: center;
     user-select: none;
-    padding: 20px;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
 }
@@ -695,6 +695,43 @@ vocabulaire
         flex-direction: column;
         gap: 20px;
     }
+}
+
+.button {
+    margin-top: 30px;
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.button button {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.367);
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    gap: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.button button:hover {
+    background-color: rgba(128, 128, 128, 0.611);
+}
+
+#more {
+    position: absolute;
+    margin: auto;
+    right: 50%;
+    translate: 50%;
 }
 
 
