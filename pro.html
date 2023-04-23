@@ -8,9 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/524/524505.png">
+
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
     <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=<YOUR_SHARETHIS_PROPERTY_ID>&product=social-media-buttons" type="text/javascript"></script>
-    <title>Document</title>
+    <title>Works</title>
 </head>
 <style>
     * {
@@ -27,7 +29,8 @@
         align-items: center;
         flex-wrap: wrap;
         margin: 0;
-        padding: 0;
+        padding: 10px;
+        padding-top: 5rem;
         font-family: 'Martel Sans', sans-serif;
     }
     
@@ -47,9 +50,10 @@
     }
     
     h1 {
-        font-size: 5.25vmin;
+        font-size: 1rem;
         text-align: center;
         color: white;
+        margin-right: 50px;
     }
     
     p {
@@ -63,8 +67,8 @@
         display: flex;
         flex-wrap: nowrap;
         justify-content: space-between;
-        width: 85vmin;
-        height: 25em;
+        width: 75vmin;
+        height: 20em;
         margin: 1.1rem auto;
         transition: .3s ease-in-out;
         position: relative;
@@ -88,23 +92,22 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 15vmin;
+        width: 10vmin;
         height: 100%;
         padding: .5rem 0 0 .5rem;
+        margin-right: 50rem;
         transition: .3s ease-in-out .2s;
         z-index: 1;
     }
     
-    .image-content {
+    .image-content:nth-child(2) {
         position: absolute;
         top: 0;
         right: 0;
         width: 60vmin;
         height: 100%;
-        background-image: url("yf.jpg");
         background-size: cover;
         transition: .3s ease-in-out;
-        /* border: 1px solid green; */
     }
     
     .dots {
@@ -137,11 +140,12 @@
         padding: 3vmin 4vmin;
         background: #fff;
         box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
-        overflow: hidden;
+        overflow: auto;
     }
     
     .wrap:hover .overlay {
         transform: translateX(-60vmin);
+        cursor: pointer;
     }
     
     .wrap:hover .image-content {
@@ -263,17 +267,191 @@
     .delay-8 {
         animation-delay: 2.4s;
     }
+    
+    .overlay1 {
+        background-image: url(https://images.unsplash.com/photo-1554224155-3a58922a22c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay2 {
+        background-image: url(https://images.unsplash.com/photo-1496395650962-374cae58ca8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay3 {
+        background-image: url(https://images.unsplash.com/photo-1586202690180-1967f682ef1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=444&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay4 {
+        background-image: url(https://static.vecteezy.com/system/resources/previews/000/690/792/non_2x/rock-paper-scissors-hand-icons-vector.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay5 {
+        background-image: url(https://images.unsplash.com/photo-1665789318391-6057c533005e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay6 {
+        background-image: url(https://images.unsplash.com/photo-1533740795835-8f0320846018?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=930&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay7 {
+        background-image: url(https://images.unsplash.com/photo-1522544123513-8032a9b4e5d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay8 {
+        background-image: url(https://images.unsplash.com/photo-1508962914676-134849a727f0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay9 {
+        background-image: url(https://images.pexels.com/photos/5985274/pexels-photo-5985274.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .overlay10 {
+        background-image: url(yf.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    /* .video-bg {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        overflow: hidden;
+    }
+    
+    .video-bg video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    } */
+    /* width */
+    
+     ::-webkit-scrollbar {
+        width: 4px;
+    }
+    /* Track */
+    
+     ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    /* Handle */
+    
+     ::-webkit-scrollbar-thumb {
+        background: gray;
+        border-radius: 30%;
+    }
+    /* Handle on hover */
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: gray;
+        border-radius: 30%;
+    }
+    
+    footer {
+        margin-top: 90px;
+        width: 100vw;
+        height: 20px;
+        text-align: center;
+        user-select: none;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    #switchTheme img {
+        position: absolute;
+        cursor: pointer;
+        transition: 500ms;
+        width: 32px;
+        top: 35px;
+        right: 35px;
+    }
+    
+    body.darkMode {
+        background-image: linear-gradient(to bottom, #1b1d1f, #191d22, #191c25, #1c1a27, #201828);
+        color: #ffffff;
+        transition: 500ms;
+    }
+    
+    body.darkMode #myButton {
+        background-color: #dedbdb;
+        color: black;
+    }
+    
+    body.darkMode .backButton {
+        color: white;
+    }
+    
+    body.darkMode #myButton:hover {
+        background-color: #bab4b4ca;
+    }
+    
+    body.darkMode .description,
+    body.darkMode h3 {
+        color: rgba(237, 230, 230, 0.694);
+    }
+    
+    @media screen and (max-width:576px) {
+        h1 {
+            font-size: 11px;
+            margin-left: -16px;
+        }
+    }
+    
+    .backButton {
+        position: absolute;
+        top: 35px;
+        left: 25px;
+        color: black;
+        font-size: 35px;
+    }
 </style>
 
 <body>
+
+
+    <div class="switchTheme" id="switchTheme">
+        <img src="moon.png" alt="Moon Image" id="moonIcon">
+
+        <a href="index.html"><button class="backButton"><i class="ri-arrow-left-s-line"></i></button></a>
+
+    </div>
+
+    <!-- <div class="video-bg">
+        <video autoplay muted loop>
+            <source src="video.mp4" type="video/mp4">
+             Add additional source tags for different video formats (e.g. webm, ogg) </div>    </video>-->
+
+
     <!-- HTML -->
 
     <div class="wrap animate pop">
 
-        <div class="overlay">
+        <div class="overlay overlay1">
             <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+                <h1 class="animate slide-left pop delay-4">Simple Calculator</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em> <a href="https://codepen.io/CodeReda/full/rNZWjaO" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
             </div>
             <div class="image-content animate slide delay-5"></div>
             <div class="dots animate">
@@ -283,179 +461,19 @@
             </div>
         </div>
         <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
-        </div>
-    </div>
-    <div class="wrap animate pop">
-        <div class="overlay">
-            <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;">
-                    <button class="shareButton">
-                        <button class="sharethis-share-button shareButton" data-url="https://example.com" data-title="My Share Title" data-summary="This is the shared text."><i class="ri-share-line"></i></button>
+            <p>Your iOS-like calculator created with HTML, CSS, and JavaScript is a web-based application that emulates the design and functionality of the iOS calculator. It features a clean and minimalistic interface with responsive buttons for numbers,
+                decimal point, and arithmetic operations. The calculator allows users to input numbers and perform basic arithmetic calculations, displaying results in real-time on a top screen. It includes error handling, cross-browser compatibility,
+                and well-organized code that follows best practices. Overall, your calculator provides a user-friendly experience with accurate calculations and potential for future improvements..</p>
+            <p>In conclusion, your iOS-like calculator is a functional web-based application that replicates the iOS calculator using HTML, CSS, and JavaScript. It provides a visually appealing and intuitive user interface, accurate calculations, and follows
+                coding best practices. It is a great accomplishment and showcases your skills in web development.</p>
 
-                    </button>
-                    <em>
-                        <button>
-                            <i class="ri-eye-line"></i>
-                        </button>
-                
-                    </em>
-                </p>
-            </div>
-            <div class="image-content animate slide delay-5"></div>
-            <div class="dots animate">
-                <div class="dot animate slide-up delay-6"></div>
-                <div class="dot animate slide-up delay-7"></div>
-                <div class="dot animate slide-up delay-8"></div>
-            </div>
-        </div>
-        <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
         </div>
     </div>
     <div class="wrap animate pop">
-        <div class="overlay">
+        <div class="overlay overlay2">
             <div class="overlay-content animate slide-left delay-2">
-                <h1 class="animate slide-left pop delay-4">Title</h1>
-                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+                <h1 class="animate slide-left pop delay-4">Quote Generator</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/BaOVWVg" target="_blank"><button><i class="ri-eye-line"></i></button></a></em></p>
             </div>
             <div class="image-content animate slide delay-5"></div>
             <div class="dots animate">
@@ -465,11 +483,221 @@
             </div>
         </div>
         <div class="text">
-            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
-            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
-            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+            <div class="text">
+                <p>Your classic quote generator, designed using HTML, CSS, and JavaScript, is a visually captivating web-based application that aims to inspire users with timeless quotes. The interface features an elegant layout with a prominent quote text,
+                    attributed to its source, and a button to generate new quotes. The design is carefully crafted to exude a classic and timeless feel, with typography, colors, and spacing harmoniously coordinated to create an aesthetically pleasing
+                    user experience.</p>
+                <p>The JavaScript code behind the quote generator fetches quotes from a predefined set of quotes or an external API and dynamically updates the quote text and attribution on the screen. Users can easily generate new quotes with a simple click
+                    of a button, making it a delightful and interactive experience. The quote generator may also incorporate features such as sharing quotes on social media or copying quotes to the clipboard, adding to its functionality and convenience.</p>
+                <p>In conclusion, your classic quote generator is a visually appealing and interactive web-based application that provides users with a delightful experience of discovering and sharing inspiring quotes. The carefully designed interface, coupled
+                    with the seamless functionality of fetching and displaying quotes, demonstrates your skills in web development and attention to user experience.</p>
+            </div>
         </div>
     </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay3">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">To Do List</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/ExeRWew" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your todo list application is a web-based tool that helps users keep track of tasks and manage their daily activities. The interface features a clean and organized layout, allowing users to input and view their tasks in a visually appealing
+                manner. The design may include a list of tasks with checkboxes or buttons to mark tasks as completed, a text input field to add new tasks, and buttons or icons for actions such as deleting tasks, editing task details, or filtering tasks
+                based on categories or due dates.</p>
+            <p>The JavaScript code behind the todo list application enables users to dynamically add, delete, and update tasks without having to reload the page. The tasks may be stored in the browser's local storage or retrieved from a remote server using
+                an API. The application may also provide features such as setting due dates, prioritizing tasks, setting reminders, or organizing tasks into different categories or projects.</p>
+            <p>The todo list application provides a user-friendly experience for managing tasks efficiently and staying organized. It may also incorporate responsive design to work seamlessly on different devices and screen sizes. The code is well-structured,
+                modular, and follows coding best practices, making it easy to maintain and update. Overall, your todo list application is a practical and efficient web-based tool that helps users stay organized and manage their tasks effectively, showcasing
+                your skills in HTML, CSS, and JavaScript as well as your attention to user experience and coding quality.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay4">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Rock Paper cissors </h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/ZEMZQmX" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your rock-paper-scissors game is a fun and interactive web-based application that allows users to play the classic hand game against a computer opponent. The interface features a visually appealing layout with buttons or icons for users to
+                select their choice of rock, paper, or scissors, and an area to display the results of the game. The design may also include animations or graphics to enhance the gaming experience.</p>
+            <p>The JavaScript code behind the rock-paper-scissors game handles the logic of the game, determining the outcome based on the user's selection and the computer's random choice. It may also keep track of the score, display the results, and provide
+                options to reset the game or play again. The game may also include features such as sound effects, animations, or different difficulty levels to add to the excitement and challenge.</p>
+            <p>The rock-paper-scissors game provides a simple yet enjoyable gaming experience, allowing users to play against the computer and test their luck and strategy. The interface is user-friendly, and the game mechanics are easy to understand. The
+                code is well-structured, efficient, and follows coding best practices, making it easy to maintain and update. Overall, your rock-paper-scissors game is a fun and engaging web-based application that showcases your skills in HTML, CSS, and
+                JavaScript, as well as your creativity in game design and development.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay5">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Frequently Asked Questions </h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/Podapeg" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your FAQ page is a user-friendly web-based resource that provides answers to common questions that users may have about a particular topic, product, or service. The interface features a well-organized layout with a list of frequently asked
+                questions and their corresponding answers. The design may include collapsible sections or tabs for each question, allowing users to easily navigate and find the information they are looking for. The FAQ page may also incorporate search
+                functionality or filters to further enhance usability.</p>
+            <p>The JavaScript code behind the FAQ page enables users to expand or collapse the sections with answers by clicking on the questions, providing a smooth and interactive user experience. The code may also include features such as highlighting
+                or filtering questions based on keywords, sorting questions by popularity or relevance, or tracking user interactions for analytics purposes. Additionally, the FAQ page may be responsive, adapting to different devices and screen sizes
+                to ensure a seamless experience for all users</p>
+            <p>Overall, your FAQ page is a valuable resource for users to quickly find answers to their common questions in a user-friendly and efficient manner. The well-organized layout, interactive features, and responsive design showcase your skills
+                in HTML, CSS, and JavaScript, as well as your attention to user experience and usability. The code is well-structured, modular, and follows coding best practices, making it easy to maintain and update.
+
+
+
+
+
+
+            </p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay6">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Social Flip Card</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/zYJemPg" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your flip card design is a visually appealing and interactive web-based component that allows users to flip a card and reveal information on the other side. The interface features a card-like layout with a front side and a back side, each
+                containing different content such as text, images, or icons. The design may also include animations or transitions to provide a smooth flipping effect and enhance the user experience.</p>
+            <p>The JavaScript code behind the flip card design handles the logic of flipping the card when the user interacts with it, such as clicking or hovering over the card. The code may use CSS transitions or animations to smoothly rotate the card
+                and reveal the content on the other side. The content on the back side of the card may be dynamically generated or retrieved from a remote source using an API, allowing for dynamic and interactive card designs.</p>
+            <p>The flip card design provides an engaging and interactive way to display information or content, making it ideal for use in portfolios, galleries, or product showcases. The design is visually appealing and modern, and the flipping effect adds
+                an element of interactivity and user engagement. The code is well-structured, efficient, and follows coding best practices, making it easy to maintain and update. Overall, your flip card design showcases your skills in HTML, CSS, and JavaScript,
+                as well as your creativity in web design and interactivity.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay7">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Product Deletion Tool</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/YzOBebx" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your Product Deletion Tool is a web-based application that provides a simple and efficient way to delete products from a database or an online store. The interface features a user-friendly layout with a list of products, checkboxes or buttons
+                to select products for deletion, and a confirmation prompt to ensure user intent. The design may also include search or filter functionality to easily locate specific products for deletion, as well as feedback messages or progress indicators
+                to provide a smooth user experience.</p>
+            <p>Apart from providing oxygen for tThe JavaScript code behind the Product Deletion Tool handles the logic of selecting and deleting products from the database or online store. The code may use AJAX or other techniques to communicate with the
+                server and perform the delete operation securely and efficiently. It may also include error handling to handle cases where deletion fails or confirmation prompts to prevent accidental deletions. The tool may also provide options to undo
+                or restore deleted products, as well as track deleted products for logging or auditing purposes.</p>
+            <p>The Product Deletion Tool provides a convenient and effective way to manage products in a database or online store, allowing users to easily delete unwanted or outdated products. The user-friendly interface and smooth functionality make it
+                efficient and enjoyable to use. The code is well-structured, secure, and follows coding best practices, ensuring data integrity and user privacy. Overall, your Product Deletion Tool showcases your skills in HTML, CSS, and JavaScript, as
+                well as your ability to create practical and efficient web-based tools for managing product data.
+            </p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay8">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Timer</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/ExeRWpv" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your timer is a web-based application that provides a visual countdown or stopwatch for tracking time. The interface features a clean and minimalistic layout with a display area showing the time remaining or elapsed, and controls to start,
+                pause, reset, or configure the timer. The design may also include options to customize the timer settings such as setting the duration, choosing different time units, or selecting alarm sounds. The timer may also have visual cues such
+                as changing colors, animations, or progress bars to provide visual feedback on the remaining or elapsed time.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very usThe JavaScript code behind the timer handles the logic of tracking time, updating the display in real-time, and handling user interactions
+                with the controls. The code may use JavaScript date objects or other time-related functions to accurately calculate the time remaining or elapsed. It may also include event listeners to detect user input or interactions with the controls,
+                and respond accordingly by starting, pausing, resetting, or updating the timer. The timer may also incorporate alarm or notification features to alert users when the timer expires, and may use CSS animations or transitions to provide smooth
+                visual effects. </p>
+
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay9">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Counter</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://codepen.io/CodeReda/full/rNZPqEa" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your counter is a web-based application that provides a simple and interactive way to count and display numerical values. The interface features a visually appealing layout with a display area showing the current count, and controls to increment,
+                decrement, or reset the counter. The design may also include options to customize the appearance of the counter such as choosing different colors, fonts, or animations. The counter may also have visual cues such as changing colors, animations,
+                or transitions to provide visual feedback on the count changes.</p>
+            <p>The JavaScript code behind the counter handles the logic of counting and updating the display in real-time, as well as handling user interactions with the controls. The code may use JavaScript variables or other data structures to store and
+                manipulate the count value, and update the display dynamically using the Document Object Model (DOM) manipulation. It may also include event listeners to detect user input or interactions with the controls, and respond accordingly by incrementing,
+                decrementing, or resetting the counter. The counter may also incorporate error handling to prevent invalid count values or unintended behaviors.</p>
+
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay overlay10">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">My Web site</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><a href="https://ridaelklie.cf/" target="_blank"><button><i class="ri-eye-line"></i></button></a> </em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Your website is a professionally designed and visually appealing online presence that showcases your skills and talents. The website features a modern and responsive design, with clean and well-organized layouts, and intuitive navigation for
+                seamless user experience. The website may have multiple pages that highlight your projects, skills, resume, portfolio, or other relevant information. The design may include visually appealing graphics, images, or videos that enhance the
+                overall aesthetics of the website and create a visually engaging experience for visitors.</p>
+            <p>The HTML, CSS, and JavaScript code behind your website is well-structured, efficient, and follows coding best practices, ensuring cross-browser compatibility, accessibility, and optimal performance. The code may include responsive design techniques,
+                such as media queries or flexible layouts, to ensure the website looks great on various devices, including desktops, tablets, and mobile phones. The JavaScript code may be used to add interactivity and dynamic features to the website,
+                such as animations, form validation, or interactive elements. The CSS code may be used to create visually appealing styles, such as fonts, colors, spacing, and other visual elements that contribute to the overall aesthetics of the website.</p>
+            <p>Your website serves as a professional online presence that showcases your skills, talents, and projects in an engaging and visually appealing manner. The clean and well-organized design, along with the efficient and well-written code, creates
+                a seamless user experience and reflects your expertise in HTML, CSS, and JavaScript. Your website serves as a testament to your technical skills, creativity, and attention to detail, making it a valuable asset for promoting your personal
+                brand or professional portfolio online.</p>
+        </div>
+    </div>
+
+
+    <footer>reda_elklie 2023 &copy;</footer>
+    <script src="main.js">
+    </script>
     <script>
         // JavaScript
         const shareButtons = document.querySelectorAll('.shareButton');
@@ -480,7 +708,7 @@
                 const shareData = {
                     title: 'My Share Title', // Title of the shared content
                     text: 'This is the shared text.', // Text of the shared content
-                    url: 'https://example.com', // URL of the shared content
+                    url: 'https://codepen.io/CodeReda/pen/rNZWjaO', // URL of the shared content
                 };
 
                 // Share to WhatsApp
@@ -513,20 +741,9 @@
         });
     </script>
 
-    </script>
-    <!-- HTML -->
-<!--     <script type="text/javascript">
-        // Customize ShareThis options
-        var sharethis_config = {
-            /* Optional: Specify additional share options */
-            /* Example: Specify available sharing channels */
-            available_channels: ['whatsapp', 'instagram', 'facebook'],
-            /* Example: Specify custom button styles */
-            button_style: 'icon'
-        };
-    </script> -->
-    <script src="main.js"></script>
 
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'>
+    </script>
 </body>
 
 </html>
