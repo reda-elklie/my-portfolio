@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
+    <script async src="https://platform-api.sharethis.com/js/sharethis.js#property=<YOUR_SHARETHIS_PROPERTY_ID>&product=social-media-buttons" type="text/javascript"></script>
+    <title>Document</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
+    body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+        font-family: 'Martel Sans', sans-serif;
+    }
+    
+    button {
+        background-color: transparent;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 20px;
+        transition: 500ms;
+        color: white;
+    }
+    
+    button:nth-child(1):hover {
+        color: red;
+    }
+    
+    h1 {
+        font-size: 5.25vmin;
+        text-align: center;
+        color: white;
+    }
+    
+    p {
+        font-size: max(10pt, 2.5vmin);
+        line-height: 1.4;
+        color: #0e390e;
+        margin-bottom: 1.5rem;
+    }
+    
+    .wrap {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 85vmin;
+        height: 25em;
+        margin: 1.1rem auto;
+        transition: .3s ease-in-out;
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 4.3px 0px 8.7px -52px rgba(0, 0, 0, 0.008), 8.6px 0px 15.9px -52px rgba(0, 0, 0, 0.012), 13.1px 0px 21.4px -52px rgba(0, 0, 0, 0.015), 17.9px 0px 25.9px -52px rgba(0, 0, 0, 0.018), 22.9px 0px 30.3px -52px rgba(0, 0, 0, 0.02), 28.8px 0px 34.7px -52px rgba(0, 0, 0, 0.022), 37.5px 0px 39.4px -52px rgba(0, 0, 0, 0.025), 45px 0px 44.4px -52px rgba(0, 0, 0, 0.028), 50.3px 0px 49.6px -52px rgba(0, 0, 0, 0.032), 55px 0px 55px -52px rgba(0, 0, 0, 0.04);
+    }
+    
+    .overlay {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 1rem .75rem;
+        background: gray;
+        transition: .4s ease-in-out;
+        z-index: 1;
+    }
+    
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 15vmin;
+        height: 100%;
+        padding: .5rem 0 0 .5rem;
+        transition: .3s ease-in-out .2s;
+        z-index: 1;
+    }
+    
+    .image-content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60vmin;
+        height: 100%;
+        background-image: url("yf.jpg");
+        background-size: cover;
+        transition: .3s ease-in-out;
+        /* border: 1px solid green; */
+    }
+    
+    .dots {
+        position: absolute;
+        bottom: 1rem;
+        right: 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 55px;
+        height: 4vmin;
+        transition: .3s ease-in-out .3s;
+    }
+    
+    .dot {
+        width: 14px;
+        height: 14px;
+        background: gray;
+        border-radius: 50%;
+        transition: .3s ease-in-out .3s;
+    }
+    
+    .text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60vmin;
+        height: 100%;
+        padding: 3vmin 4vmin;
+        background: #fff;
+        box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / .4);
+        overflow: hidden;
+    }
+    
+    .wrap:hover .overlay {
+        transform: translateX(-60vmin);
+    }
+    
+    .wrap:hover .image-content {
+        width: 30vmin;
+    }
+    
+    .wrap:hover .overlay-content {
+        border: none;
+        transition-delay: .2s;
+        transform: translateX(60vmin);
+    }
+    
+    .wrap:hover .dots {
+        transform: translateX(1rem);
+    }
+    
+    .wrap:hover .dots .dot {
+        background: white;
+    }
+    /* Animations and timing delays */
+    
+    .animate {
+        animation-duration: 0.7s;
+        animation-timing-function: cubic-bezier(.26, .53, .74, 1.48);
+        animation-fill-mode: backwards;
+    }
+    /* Pop In */
+    
+    .pop {
+        animation-name: pop;
+    }
+    
+    @keyframes pop {
+        0% {
+            opacity: 0;
+            transform: scale(0.5, 0.5);
+        }
+        100% {
+            opacity: 1;
+            transform: scale(1, 1);
+        }
+    }
+    /* Slide In */
+    
+    .slide {
+        animation-name: slide;
+    }
+    
+    @keyframes slide {
+        0% {
+            opacity: 0;
+            transform: translate(4em, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+    /* Slide Left */
+    
+    .slide-left {
+        animation-name: slide-left;
+    }
+    
+    @keyframes slide-left {
+        0% {
+            opacity: 0;
+            transform: translate(-40px, 0);
+        }
+        100% {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+    
+    .slide-up {
+        animation-name: slide-up;
+    }
+    
+    @keyframes slide-up {
+        0% {
+            opacity: 0;
+            transform: translateY(3em);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .delay-1 {
+        animation-delay: 0.3s;
+    }
+    
+    .delay-2 {
+        animation-delay: 0.6s;
+    }
+    
+    .delay-3 {
+        animation-delay: 0.9s;
+    }
+    
+    .delay-4 {
+        animation-delay: 1.2s;
+    }
+    
+    .delay-5 {
+        animation-delay: 1.5s;
+    }
+    
+    .delay-6 {
+        animation-delay: 1.8s;
+    }
+    
+    .delay-7 {
+        animation-delay: 2.1s;
+    }
+    
+    .delay-8 {
+        animation-delay: 2.4s;
+    }
+</style>
+
+<body>
+    <!-- HTML -->
+
+    <div class="wrap animate pop">
+
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;">
+                    <button class="shareButton">
+                        <button class="sharethis-share-button shareButton" data-url="https://example.com" data-title="My Share Title" data-summary="This is the shared text."><i class="ri-share-line"></i></button>
+
+                    </button>
+                    <em>
+                        <button>
+                            <i class="ri-eye-line"></i>
+                        </button>
+                
+                    </em>
+                </p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <div class="wrap animate pop">
+        <div class="overlay">
+            <div class="overlay-content animate slide-left delay-2">
+                <h1 class="animate slide-left pop delay-4">Title</h1>
+                <p class="animate slide-left pop delay-5" style="color: white; margin-bottom: 2.5rem;"><button class="shareButton"><i class="ri-share-line"></i></button> <em><button><i class="ri-eye-line"></i></button></em></p>
+            </div>
+            <div class="image-content animate slide delay-5"></div>
+            <div class="dots animate">
+                <div class="dot animate slide-up delay-6"></div>
+                <div class="dot animate slide-up delay-7"></div>
+                <div class="dot animate slide-up delay-8"></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>Title are woody perennial plants that are a member of the kingdom <em>Plantae</em>. All species of Title are grouped by their genus, family, and order. This helps make identifying and studying Title easier.</p>
+            <p>Apart from providing oxygen for the planet and beauty when they bloom or turn color, Title are very useful. Certain species of hardwood and softwood Title are excellent for timber, making furniture, and paper.</p>
+            <p>When managed properly, Title are a good source of renewable energy and construction material.</p>
+        </div>
+    </div>
+    <script>
+        // JavaScript
+        const shareButtons = document.querySelectorAll('.shareButton');
+
+        shareButtons.forEach(shareButton => {
+
+            shareButton.addEventListener('click', () => {
+                const shareData = {
+                    title: 'My Share Title', // Title of the shared content
+                    text: 'This is the shared text.', // Text of the shared content
+                    url: 'https://example.com', // URL of the shared content
+                };
+
+                // Share to WhatsApp
+                if (navigator.share && navigator.canShare && navigator.canShare({
+                        title: shareData.title,
+                        text: shareData.text,
+                        url: shareData.url
+                    })) {
+                    navigator.share(shareData)
+                        .then(() => console.log('Share to WhatsApp was successful.'))
+                        .catch((error) => console.error('Error sharing to WhatsApp:', error));
+                } else {
+                    console.error('Sharing to WhatsApp not supported on this device or browser.');
+                }
+
+                // Share to Instagram
+                if (navigator.share && window.location.protocol === 'https:' && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    window.open(`https://www.instagram.com/share?url=${encodeURIComponent(shareData.url)}&text=${encodeURIComponent(shareData.text)}`);
+                } else {
+                    console.error('Sharing to Instagram not supported on this device or browser.');
+                }
+
+                // Share to Facebook
+                // if (navigator.share) {
+                //     window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareData.url)}&quote=${encodeURIComponent(shareData.text)}`);
+                // } else {
+                //     console.error('Sharing to Facebook not supported on this device or browser.');
+                // }
+            });
+        });
+    </script>
+
+    </script>
+    <!-- HTML -->
+    <script type="text/javascript">
+        // Customize ShareThis options
+        var sharethis_config = {
+            /* Optional: Specify additional share options */
+            /* Example: Specify available sharing channels */
+            available_channels: ['whatsapp', 'instagram', 'facebook'],
+            /* Example: Specify custom button styles */
+            button_style: 'icon'
+        };
+    </script>
+
+</body>
+
+</html>
