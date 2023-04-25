@@ -134,7 +134,7 @@ body.darkMode h3 {
 .profile img {
     width: 100px;
     height: 95px;
-    border-radius: 50%;
+    border-radius: 50% 50% 50% 50%;
     outline: 2.8px solid greenyellow;
     outline-offset: 2px;
     transition: 500ms;
