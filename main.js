@@ -6,7 +6,7 @@ let btn = document.querySelector(".profile")
 let img = document.querySelector("img")
 
 
-// JavaScript code to toggle dark mode when the moon image is clicked
+
 
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("darkMode");
@@ -20,9 +20,9 @@ document.getElementById("switchTheme").addEventListener("click", function() {
     localStorage.setItem("darkMode", document.body.classList.contains("darkMode"));
 
 
-    // Add fade-in animation class for a smooth transition
+   
     document.body.classList.add("fadeIn");
-    // Remove fade-in animation class after 0.3 seconds
+  
     setTimeout(function() {
         document.body.classList.remove("fadeIn");
     }, 300);
@@ -30,11 +30,11 @@ document.getElementById("switchTheme").addEventListener("click", function() {
     // Toggle moon icon source when toggling dark mode
     var moonIcon = document.getElementById("moonIcon");
     if (moonIcon.src.includes("moon.png")) {
-        moonIcon.src = "sun.png"; // Update with the path to your sun icon
-        moonIcon.alt = "Sun Image"; // Update with your sun icon alt text
+        moonIcon.src = "sun.png"; 
+        moonIcon.alt = "Sun Image"; 
     } else {
-        moonIcon.src = "moon.png"; // Update with the path to your moon icon
-        moonIcon.alt = "Moon Image"; // Update with your moon icon alt text
+        moonIcon.src = "moon.png"; 
+        moonIcon.alt = "Moon Image";
     }
 });
 
@@ -80,13 +80,13 @@ window.addEventListener("load", function() {
 })
 
 
-// Get the current count from local storage or initialize it to 0
+
 var count = parseInt(localStorage.getItem('visitCount')) || 0;
 
-// Increment the count and store it back in local storage
+
 localStorage.setItem('visitCount', ++count);
 
-// Display the count only to the site owner
+
 if (document.location.search.indexOf('showVisitCount') !== -1) {
     document.write('This page has been visited ' + count + ' times.');
 }
