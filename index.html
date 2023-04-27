@@ -212,19 +212,19 @@
 
     </footer>
     <script>
-        // Check if the visitor count cookie exists
+        
         if (document.cookie.indexOf('visitorCount=') === -1) {
-            // If not, set the cookie with an initial value of 1
+           
             document.cookie = 'visitorCount=1; expires=Fri, 31 Dec 9999 23:59:59 GMT';
         } else {
-            // If yes, retrieve the current visitor count from the cookie
+            
             const visitorCount = parseInt(document.cookie.split('visitorCount=')[1]) + 1;
 
-            // Update the visitor count cookie with the new value
+    
             document.cookie = `visitorCount=${visitorCount}; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
         }
 
-        // Display the visitor count on the front-end
+       
         document.getElementById('visitorCountElement').textContent = document.cookie.split('visitorCount=')[1];
     </script>
     <script src="main.js "></script>
