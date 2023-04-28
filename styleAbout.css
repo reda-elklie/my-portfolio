@@ -161,3 +161,17 @@ body.darkMode .backButton {
     gap: 15px;
     text-decoration: none;
 }
+
+
+        footer {
+            margin-top: 90px;
+            width: 100vw;
+            height: 20px;
+            text-align: center;
+            user-select: none;
+            padding-bottom: 30px;
+            display: flex;
+            justify-content: center;
+        }
+
+
