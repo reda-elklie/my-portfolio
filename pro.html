@@ -288,7 +288,22 @@
     </div>
 
 
-    <footer>reda_elklie 2023 &copy;</footer>
+        
+    <footer>
+   <p id="copyright">
+      © <span id="year"></span> Rida El Klie . All Rights Reserved.
+   </p>
+</footer>
+
+    
+    
+    <script>
+   var Year = new Date().getFullYear();
+
+   
+   var yearSpan = document.getElementById("year");
+   yearSpan.innerHTML = Year;
+</script>
     <script src="main.js">
     </script>
     <script>
