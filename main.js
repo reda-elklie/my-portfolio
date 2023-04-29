@@ -27,15 +27,22 @@ document.getElementById("switchTheme").addEventListener("click", function() {
         document.body.classList.remove("fadeIn");
     }, 300);
 
-    // Toggle moon icon source when toggling dark mode
-    var moonIcon = document.getElementById("moonIcon");
+   const fotos = document.querySelectorAll('.profileSocail img');
+
     if (moonIcon.src.includes("moon.png")) {
-        moonIcon.src = "sun.png"; 
-        moonIcon.alt = "Sun Image"; 
+        moonIcon.src = "sun.png";
+        moonIcon.alt = "Sun Image";
+        fotos.forEach(foto => {
+            foto.style.filter = "invert(100%)";
+        });
     } else {
-        moonIcon.src = "moon.png"; 
+        moonIcon.src = "moon.png";
         moonIcon.alt = "Moon Image";
+        fotos.forEach(foto => {
+            foto.style.filter = "invert(0%)";
+        });
     }
+
 });
 
 
