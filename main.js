@@ -6,12 +6,19 @@ let btn = document.querySelector(".profile")
 let img = document.querySelector("img")
 
 
-
+   const fotos = document.querySelectorAll('.profileSocail img');
 
 if (localStorage.getItem("darkMode") === "true") {
     document.body.classList.add("darkMode");
 
-    document.getElementById("moonIcon").src = "sun.png"; // Update with your dark mode icon image source
+    document.getElementById("moonIcon").src = "sun.png"; 
+    
+    
+    
+       fotos.forEach(foto => {
+        foto.style.filter = "invert(100%)";
+    }); 
+    
 
 }
 document.getElementById("switchTheme").addEventListener("click", function() {
