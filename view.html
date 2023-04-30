@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-     <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/524/524505.png">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,200;0,300;0,400;0,500;1,200;1,400&display=swap" rel="stylesheet">
     <title>About Me - Rida El Klie</title>
     <link rel="stylesheet" href="styleAbout.css">
 
-
+    <!-- Schema.org markup for SEO -->
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -33,23 +32,20 @@
 </head>
 
 
+
 <body>
     <!--  for the moon image and switchTheme  -->
     <div class="switchTheme" id="switchTheme">
         <img src="moon.png" alt="Moon Image" id="moonIcon">
 
+
     </div>
     <a href="index.html"><button class="backButton"><i class="ri-arrow-left-s-line"></i></button></a>
-    
     <div class="aboutContainer">
         <div class="titleAbout">About Me</div>
         <div class="descriptionAbout">
-            <p>I am Rida El Klie, an <span id="age">18</span>
-
-
-
--year-old web development enthusiast from Tetouan, Morocco. Currently studying Development Digital at Offshore Institute, I am skilled in HTML, CSS, JavaScript, Php, SQL, Python, and more. With a passion for continuous
-                learning, excellent communication and problem-solving skills, and a strong drive to succeed, my goal is to become a professional full-stack developer and create impactful digital experiences for users..</p>
+            <p>I am Rida El Klie, an <span id="birth">00</span> -year-old web development enthusiast from Tetouan, Morocco. Currently studying Development Digital at Offshore Institute, I am skilled in HTML, CSS, JavaScript, Php, SQL, Python, and more. With
+                a passion for continuous learning, excellent communication and problem-solving skills, and a strong drive to succeed, my goal is to become a professional full-stack developer and create impactful digital experiences for users..</p>
             <p>Thank you for taking the time to learn about me. I am eager to showcase my abilities and contribute to the world of web development. Let's collaborate and create remarkable online solutions together!</p>
         </div>
 
@@ -59,45 +55,34 @@
         <a href="https://wa.me/+212652224291?text=Hello%2C" target="_blank"><button class="whatsap" id="myButton">Contact <img src="whatsapp.png" alt=""  ></button></a>
     </div>
     <script src="main.js"></script>
-<!--     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'>
+    <!-- <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool@x.x.x'>
     </script> -->
-    
-    
-    
-    
-        
+
+
+
     <footer>
-   <p id="copyright">
-      © <span id="year"></span> Rida El Klie . All Rights Reserved.
-   </p>
-</footer>
+        <p id="copyright">
+            © <span id="year"></span> Rida El Klie . All Rights Reserved.
+        </p>
+    </footer>
 
-    
-    
+
+
     <script>
-       var birthdate = new Date("2005-02-20"); 
-      var today = new Date();
-      var age = today.getFullYear() - birthdate.getFullYear();
-      var monthDiff = today.getMonth() - birthdate.getMonth();
-      if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthdate.getDate())) {
-        age--;
-      }
+        var Year = new Date().getFullYear();
 
-      
-      document.getElementById("age").textContent = age;
-        
-        
-        let loader = document.querySelector(".preloader");
-window.addEventListener("load", function() {
-    loader.style.display = "none";
 
-})
-        
-        
-        
-</script>
-    
-    
+        var yearSpan = document.getElementById("year");
+        yearSpan.innerHTML = Year;
+
+
+
+        var spanYear = document.getElementById("birth");
+        const year = new Date().getFullYear(); // 2023
+        const age = year - 2005
+        spanYear.innerHTML = age;
+    </script>
+
 </body>
 
 </html>
