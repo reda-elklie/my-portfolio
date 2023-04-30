@@ -332,14 +332,14 @@
                 }
 
 
-                // // Share to Instagram
-                // if (navigator.share && window.location.protocol === 'https:' && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-                //     navigator.share(shareData)
-                //         .then(() => console.log('Share to Instagram was successful.'))
-                //         .catch((error) => console.error('Error sharing to Instagram:', error));
-                // } else {
-                //     console.error('Sharing to Instagram not supported on this device or browser.');
-                // }
+                // Share to Instagram
+                if (navigator.share && window.location.protocol === 'https:' && /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    navigator.share(shareData)
+                        .then(() => console.log('Share to Instagram was successful.'))
+                        .catch((error) => console.error('Error sharing to Instagram:', error));
+                } else {
+                    console.error('Sharing to Instagram not supported on this device or browser.');
+                }
 
 
 
