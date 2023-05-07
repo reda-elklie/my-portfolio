@@ -66,6 +66,9 @@ body.darkMode h3 {
     color: rgba(237, 230, 230, 0.694);
 }
 
+body.darkMode .profile img {
+    outline: 2.8px solid greenyellow;
+}
 
 /*all container project*/
 
@@ -659,12 +662,15 @@ vocabulaire
         height: 95px;
         border-radius: 50%;
         border: none;
-        outline: 2.8px solid greenyellow;
+        outline: 2.8px solid rgba(128, 128, 128, 0.367);
         outline-offset: 2px;
         transition: 500ms;
         z-index: 60;
-        box-shadow: 9.3px 3.3px 41.1px rgba(0, 0, 0, 0.027), 11.9px 4.3px 59.3px rgba(0, 0, 0, 0.032), 14.7px 5.3px 71.5px rgba(0, 0, 0, 0.038), 17.7px 6.4px 82.8px rgba(0, 0, 0, 0.045), 21.2px 7.6px 95.3px rgba(0, 0, 0, 0.052), 25px 9px 110px rgba(0, 0, 0, 0.06);
+       
     }
+    body.darkMode .profile img {
+    outline: 2.8px solid greenyellow;
+}
 }
 
 @media (max-width: 1024px) {
