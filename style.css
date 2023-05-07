@@ -135,7 +135,7 @@ body.darkMode h3 {
     width: 100px;
     height: 95px;
     border-radius: 50% 50% 50% 50%;
-    outline: 2.8px solid greenyellow;
+    outline: 2.8px solid rgb(139, 132, 132);
     outline-offset: 2px;
     transition: 500ms;
     z-index: 60;
