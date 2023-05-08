@@ -105,6 +105,7 @@ outline: none;
     align-items: center;
     cursor: pointer;
     margin-top: 5rem;
+    user-select:none;
 }
 
 .profile.active img {
