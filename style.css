@@ -69,7 +69,15 @@ body.darkMode h3 {
 body.darkMode .profile img {
     outline: 2.8px solid greenyellow;
 }
+body.darkMode .profile.active img {
 
+    
+
+outline: none;
+
+    
+
+}
 /*all container project*/
 
 .cc {
