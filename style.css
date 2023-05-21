@@ -380,7 +380,7 @@ body.darkMode .profile.active img {
 }
 
 .project:nth-child(1) {
-    background-image: url(https://media.licdn.com/dms/image/D4E22AQFQh7umT0i6wA/feedshare-shrink_2048_1536/0/1684623123570?e=1687392000&v=beta&t=QUdsOHN05Vmr7TZffTNLqFrr5fmbxsFxSu8KyLzHhc0);
+    background-image: url(https://images.unsplash.com/photo-1586202690180-1967f682ef1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=444&q=80);
     background-position: center;
     background-size: cover;
 }
