@@ -379,26 +379,27 @@ body.darkMode .profile.active img {
     transition: all 500ms ease-in;
 }
 
+
 .project:nth-child(1) {
-    background-image: url(https://images.unsplash.com/photo-1586202690180-1967f682ef1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=444&q=80);
+    background-image: url(https://media.licdn.com/dms/image/D4E22AQFQh7umT0i6wA/feedshare-shrink_2048_1536/0/1684623123570?e=1687392000&v=beta&t=QUdsOHN05Vmr7TZffTNLqFrr5fmbxsFxSu8KyLzHhc0);
     background-position: center;
     background-size: cover;
 }
 
 .project:nth-child(2) {
-    background-image: url(https://images.unsplash.com/photo-1496395650962-374cae58ca8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-image: url(https://images.unsplash.com/photo-1586202690180-1967f682ef1a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=444&q=80);
     background-position: center;
     background-size: cover;
 }
 
 .project:nth-child(3) {
-    background-image: url(https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: url(https://images.unsplash.com/photo-1496395650962-374cae58ca8b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
     background-position: center;
     background-size: cover;
 }
 
 .project:nth-child(4) {
-    background-image: url(https://images.pexels.com/photos/10506091/pexels-photo-10506091.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-image: url(https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FsY3VsYXRvcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
     background-position: center;
     background-size: cover;
 }
