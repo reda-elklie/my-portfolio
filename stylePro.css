@@ -311,7 +311,11 @@ p {
     background-position: center;
     background-size: cover;
 }
-
+.overlay12 {
+    background-image: url(https://media.licdn.com/dms/image/D4E22AQE6AuF-m-mP8Q/feedshare-shrink_800/0/1685919609421?e=1688601600&v=beta&t=UxraW3E60cKVeEBdvdPJ4C_22bor1OLeey8FOhwo-xs);
+    background-position: center;
+    background-size: cover;
+}
 /* .video-bg {
         position: fixed;
         top: 0;
