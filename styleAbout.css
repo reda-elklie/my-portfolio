@@ -111,7 +111,9 @@ body {
 }
 
 body.darkMode {
-    background-image: linear-gradient(to bottom, #1b1d1f, #191d22, #191c25, #1c1a27, #201828);
+/*     background-image: linear-gradient(to bottom, #1b1d1f, #191d22, #191c25, #1c1a27, #201828); */
+        background-image: linear-gradient(to right bottom, #2e2a2c, #2b282a, #282529, #242327, #212125, #202125, #1e2125, #1d2124, #1f2326, #212627, #232829, #252a2a);
+
     color: #ffffff;
     transition: 500ms;
 }
